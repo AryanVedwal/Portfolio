@@ -459,7 +459,12 @@ p.grid-box span i {
     height: auto;
   }
 
+  .project-item.selected {
+    height: 50vh;
+  }
+
   .project-item p {
+    height: 42vh;
     gap: 20px;
   }
 }
