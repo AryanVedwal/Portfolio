@@ -168,6 +168,7 @@ body {
   max-height: 20%;
   font-size: clamp(1rem, 0.9633rem + 0.1835vw, 1.25rem);
   padding: 4px 6px;
+  text-align: center;
 }
 /*-- Home --*/
 
@@ -431,6 +432,7 @@ p.grid-box span i {
   .portfolio .navbar {
     display: flex;
   }
+
 }
 
 @media screen and (max-width: 768px) {
