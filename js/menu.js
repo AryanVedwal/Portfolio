@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     dropToggles.forEach(function (dropToggle) {
         dropToggle.addEventListener('click', function () {
             menu.classList.remove('open');
-            // Add additional logic or actions as needed
         });
     });
 });
