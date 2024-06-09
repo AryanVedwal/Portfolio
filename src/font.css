@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "kunika";
+  src: url("/public/assets/font/kunika-webfont.woff2") format("woff2"),
+    url("/public/assets/font/kunika-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "kunika", sans-serif;
+}
+
+h6 {
+  font-size: clamp(1rem, 0.7045rem + 1.4777vw, 1.41375rem);
+}
+
+h5 {
+  font-size: clamp(1.41375rem, 1.1476rem + 1.331vw, 1.999375rem);
+}
+
+h4 {
+  font-size: clamp(1.999375rem, 1.6232rem + 1.8807vw, 2.826875rem);
+}
+
+h3 {
+  font-size: clamp(2.826875rem, 2.2948rem + 2.6605vw, 3.9975rem);
+}
+
+h2 {
+  font-size: clamp(3.9975rem, 3.2452rem + 3.7614vw, 5.6525rem);
+}
+
+h1 {
+  font-size: clamp(5.6525rem, 4.5889rem + 5.3182vw, 7.9925rem);
+}
+
+p {
+  font-size: clamp(0.875rem, 0.8182rem + 0.2841vw, 1rem);
+}

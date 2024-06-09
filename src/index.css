@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: #101010;
+  color: #eaeaea;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "name name name name"
+    "email email phone phone"
+    "message message message message"
+    "button empty empty empty";
+  gap: 8px;
+}
+
+form textarea {
+  grid-area: message;
+}
+
+form .button {
+  border: 2px solid;
+  padding: 4px 16px;
+  height: 50px;
+}
+
+form input:nth-child(1) {
+  grid-area: name;
+}
+
+form input:nth-child(2) {
+  grid-area: email;
+}
+
+form input:nth-child(3) {
+  grid-area: phone;
+}
+
+form input {
+  height: 60px;
+  background: #ffffff10;
+  padding: 4px 16px;
+}
+
+form textarea {
+  min-height: 150px;
+  max-height: 300px;
+  background: #ffffff10;
+  padding: 4px 16px;
+}
+@media screen and (max-width: 640px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .button {
+    padding: 4px 40px;
+  }
 }
