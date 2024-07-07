@@ -7,9 +7,18 @@ import Projects from "./components/projects/projects";
 import Header from "./components/header/header";
 import Loader from "./components/other/loader";
 // import SubHead from './components/header/subHead';
+import Lenis from "lenis";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
+
+  const lenis = new Lenis();
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 
   const socialLinks = [
     {
